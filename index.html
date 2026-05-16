@@ -717,7 +717,7 @@
 <div class="container">
 
     <div id="cfgError" style="margin-top:10px;font-size:.82rem;display:none;padding:8px 12px;border-radius:8px"></div>
-    <small style="color:#888;margin-top:8px;display:block">Ohne Sync: Daten nur lokal. Jeder Browser hat eigene Daten.</small>
+
   </div>
 
   <!-- HEADER -->
@@ -1344,11 +1344,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   renderAll();
 });
 
-function checkConfig() { setSyncStatus("ok"); } else {
-    banner.classList.remove('show');
-    setSyncStatus('ok');
-  }
-}
+function checkConfig() { setSyncStatus("ok"); }
 
 
 
